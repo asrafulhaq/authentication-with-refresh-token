@@ -6,8 +6,10 @@ const {
   deleteUser,
   updateUser,
 } = require("../controllers/userController");
+const tokenVerify = require("../middlewares/tokenVerify");
 
 const router = express.Router();
+router.use(tokenVerify);
 
 // routing
 router.route("/").get(getAllUser).post(createUser);

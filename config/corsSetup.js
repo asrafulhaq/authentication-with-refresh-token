@@ -1,5 +1,5 @@
 // allowed origin
-const allowedOrigins = ["http://localhost:9090/"];
+const allowedOrigins = ["http://localhost:5050/", "http://localhost:5173/"];
 
 // cors options
 const corsOptions = {
